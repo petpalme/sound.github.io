@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <!-- this was the easy part, setting up the link to the js and css files-->
+    <script src="pass1.js"></script>
+    <link href="pass1.css" rel="stylesheet" type="text/css" />
+    <head>
+        <!-- the purpose and name of the page, login-->
+        <title>Login</title>
+    </head>
+
+    <body>
+        <h1>
+            <!-- trying to show some manners and what is expected-->
+            Please Log In
+        </h1>
+        <br>
+        <!-- oh the start. Im still not sure if I used the correct text, but it is working-->
+        <p id="loginStatus" class="loginID">Log in below, please</p>
+        <br>
+        <!-- credsubmit seems to be a activation word like go. Because I had password and nothing would happen.-->
+        <form id="credSubmit" onsubmit="return false">
+            <!-- the text for blocks was easy. the input type makes sense: text so only text and number for numbers only. It still let me put nubers in text block though.-->
+            First Name:     <input type="text" id="first" /> <br>
+            Last Name:    <input type="text" id="last" /> <br>
+            Badge Number:   <input type="number" id="badge" /> <br>
+            <!-- checkcred is another word I had to put back. Not sure of its use still -->
+            <input type="Submit" onclick="velma();" />
+        </form>
+    </body>
+
+</html>
